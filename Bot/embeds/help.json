@@ -1,0 +1,27 @@
+{
+  "content": "`UnderBot's Help Menu`",
+  "embed": {
+    "title": "Commands:",
+    "color": 9118641,
+    "footer": {
+      "text": "by UnderBot"
+    },
+    "thumbnail": {
+      "url": "https://raw.githubusercontent.com/NovusEdge/UnderBot/master/logo/logo.ico"
+    },
+    "author": {
+      "name": "UnderBot",
+      "icon_url": "https://raw.githubusercontent.com/NovusEdge/UnderBot/master/logo/logo.ico"
+    },
+    "fields": [
+      {
+        "name": "`[prefix]help / h / HELP / Help`",
+        "value": "```txt\nDisplays this menu 😛\n```"
+      },
+      {
+          "name": "`[prefix]invite / INVITE / Invite`",
+          "value": "```txt\nDisplays an invite link for the bot\n```"
+      }
+    ]
+  }
+}
