@@ -9,6 +9,6 @@ if __name__ == "__main__":
     with open("../.configs/token_config", "r") as f:
         TOKEN = base64.b64decode(bytes(f.read().strip(), "utf-8")).decode('utf-8')
 
-    b = bot.Bot(token=TOKEN, command_prefix="gb.")
+    b = bot.Bot(token=TOKEN, command_prefix="ub.")
     b.setup()
     b.run()

@@ -21,6 +21,14 @@
       {
           "name": "`[prefix]invite / INVITE / Invite`",
           "value": "```txt\nDisplays an invite link for the bot\n```"
+      },
+      {
+          "name": "`[prefix]cats / CATS / cat / CAT`",
+          "value": "```Displays a cute picture/gif of a cat.```"
+      },
+      {
+          "name": "`[prefix]dogs / DOGS / dog / DOG`",
+          "value": "```Displays a cute pic of a dog.```"
       }
     ]
   }
