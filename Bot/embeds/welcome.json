@@ -1,0 +1,30 @@
+{
+  "embed": {
+    "title": "*WELCOME to the kennel of Underdogs*",
+    "color": 1035781,
+    "footer": {
+      "text": "by UnderBot"
+    },
+    "thumbnail": {
+      "url": "https://raw.githubusercontent.com/NovusEdge/UnderBot/master/logo/logo(pexels-sebastiaan-stam-1097456).ico"
+    },
+    "author": {
+      "name": "UnderBot",
+      "icon_url": "https://raw.githubusercontent.com/NovusEdge/UnderBot/master/logo/logo(pexels-sebastiaan-stam-1097456).ico"
+    },
+    "fields": [
+        {
+          "name": "What are you waiting for?",
+          "value" : "Go pick your roles in `#roles` help us out."
+        },
+        {
+          "name":"Wanna help your fav series release faster?",
+          "value": "Go check out `#recruitment` if you wanna help out."
+        },
+        {
+          "name": "PS: Follow all the rules in #rules and have a great time.",
+          "value": ":smile:"
+        }
+    ]
+  }
+}
