@@ -29,6 +29,14 @@
       {
           "name": "`[prefix]dogs / DOGS / dog / DOG`",
           "value": "```Displays a cute pic of a dog.```"
+      },
+      {
+          "name": "`[old_prefix]setprefix / setpre=\"[new_prefix]\"`",
+          "value": "```Changes the command prefix for the bot to new_prefix.\nPlease note that the new prefix should be enclosed in quotes.```"
+      },
+      {
+          "name": "`[prefix]resetpre / resetprefix / reset_prefix`",
+          "value": "```Resets the command prefix to the default \"ub.\"```"
       }
     ]
   }
