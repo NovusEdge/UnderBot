@@ -15,3 +15,8 @@ class Events(commands.Cog):
     @commands.Cog.listener()
     async def on_member_join(self, member):
         await welcome.welcome(member, self.bot)
+
+    @commands.Cog.listener()
+    async def on_member_leave(self, member):
+        await member.send("Did ya leave accidentally?")
+        await member.send("`To rejoin the UnderDog world use: https://discord.gg/mAKCtWjpUU`")
