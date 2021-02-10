@@ -1,8 +1,8 @@
 import requests, json, discord, time
 
 async def kawaii(ctx):
-    loadingGif = requests.get( "https://api.giphy.com/v1/gifs/random?api_key=LSN3t1vDsXlV40noyN06kEGlBopLsZNQ&tag=kawaii-loading-anime&rating=g" )
-    loadingGif = loadingGif.json()["data"]["images"]["original"]["url"]
+    loadingGif = "https://media1.tenor.com/images/fd07a59a62cc79a98487ac9196a6a29b/tenor.gif?itemid=12547924"
+
     emObj = discord.Embed.from_dict({
     "embed": {
         "title": "Generating Cuteness...",
