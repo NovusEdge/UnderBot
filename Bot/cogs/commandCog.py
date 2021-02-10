@@ -1,6 +1,6 @@
 import discord, requests, json, asyncio
 from discord.ext import commands
-from cmds import help, invite, get_cat, get_dog, get_kawaii, set_pre
+from cmds import help, invite, get_cat, get_dog, get_kawaii, set_pre, welcome
 
 class BotCommands(commands.Cog):
     def __init__(self, bot):
@@ -34,6 +34,7 @@ class BotCommands(commands.Cog):
     async def setprefix(self, ctx):
         await set_pre.setprefix(ctx, self.bot)
 
-    @comamnds.command(aliases=["resetpre", "reset_prefix"])
+    @commands.command(aliases=["resetpre", "reset_prefix"])
     async def resetprefix(self, ctx):
         self.bot.command_prefix = "ub."
+        await ctx.send("`Command Prefix` set to default: `ub.`")

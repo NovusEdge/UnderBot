@@ -10,7 +10,7 @@ class Bot(object):
 
     def setup(self):
         self.botObj.add_cog(eventCog.Events(self.botObj))
-        self.botObj.add_cog(eventCog.BotCommands(self.botObj))
+        self.botObj.add_cog(commandCog.BotCommands(self.botObj))
 
     def run(self):
         self.botObj.run(self.token)
