@@ -6,7 +6,16 @@ class Bot(object):
 
     def __init__(self, token="", command_prefix="ub."):
         self.token = token
-        self.botObj = commands.Bot(command_prefix=command_prefix, help_command=None)
+
+        intents = discord.Intents.default() # Gets the default intents from discord.
+        intents.members = True # enables members intents on the bot.
+        intents.guilds = True
+        intents.messages = True
+        intents.dm_messages = True
+
+
+        self.botObj = commands.Bot(command_prefix=command_prefix, help_command=None, intents=intents)
+
 
     def setup(self):
         self.botObj.add_cog(eventCog.Events(self.botObj))
