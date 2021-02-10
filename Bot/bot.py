@@ -1,6 +1,6 @@
 import discord, os, sys, pathlib, base64, json, asyncio
 from discord.ext import commands
-from cogs import eventCog
+from cogs import eventCog, commandCog
 
 class Bot(object):
 
@@ -10,6 +10,7 @@ class Bot(object):
 
     def setup(self):
         self.botObj.add_cog(eventCog.Events(self.botObj))
+        self.botObj.add_cog(commandCog.BotCommands(self.botObj))
 
     def run(self):
         self.botObj.run(self.token)

@@ -1,6 +1,7 @@
 import requests, json, discord
 
 async def cats(ctx):
+    ctx.send()
     catPic = requests.get( 'https://api.thecatapi.com/v1/images/search' ).json()[0]['url']
 
     embedObj = discord.Embed.from_dict({
