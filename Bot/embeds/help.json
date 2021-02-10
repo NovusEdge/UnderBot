@@ -31,8 +31,8 @@
           "value": "```Displays a cute pic of a dog.```"
       },
       {
-          "name": "`[old_prefix]setprefix / setpre=\"[new_prefix]\"`",
-          "value": "```Changes the command prefix for the bot to new_prefix.\nPlease note that the new prefix should be enclosed in quotes.```"
+          "name": "`[old_prefix]setprefix / setpre prefix=\"[new_prefix]\"`",
+          "value": "```Changes the command prefix for the bot to new_prefix.\nPlease note that the new prefix should be enclosed in quotes; leave no space between the \" and the \"=\"```"
       },
       {
           "name": "`[prefix]resetpre / resetprefix / reset_prefix`",
@@ -41,3 +41,5 @@
     ]
   }
 }
+
+/* https://images-ext-1.discordapp.net/external/6iaeTqRGdsTUjaalYp0dx9aBOLUAJCBJZ4b_FZQASKM/%3Fcid%3Df184bc62896ad7095caaad1c4c7c47c50d1a248d1bece19e%26rid%3Dgiphy.gif/https/media1.giphy.com/media/yXPquATCb8kGk/giphy.gif */
