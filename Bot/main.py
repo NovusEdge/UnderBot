@@ -12,3 +12,5 @@ if __name__ == "__main__":
     b = bot.Bot(token=TOKEN, command_prefix="ub.")
     b.setup()
     b.run()
+
+# brew install ffmpeg

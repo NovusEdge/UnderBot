@@ -7,7 +7,7 @@
       "text": "by UnderBot"
     },
     "thumbnail": {
-      "url": "https://raw.githubusercontent.com/NovusEdge/UnderBot/master/logo/logo.ico"
+      "url": "https://media.giphy.com/media/fT3PPZwB2lZMk/giphy.gif"
     },
     "author": {
       "name": "UnderBot",
@@ -31,8 +31,20 @@
           "value": "```Displays a cute pic of a dog.```"
       },
       {
+          "name": "`[prefix]join_voice / vc / join / join_vc`",
+          "value": "```Bot Joins the voice chat the user is currently in.```"
+      },
+      {
+          "name": "`[prefix]leave_voice / leave / leave_vc`",
+          "value": "```Bot leaves the vc it is currently in.```"
+      },
+      {
           "name": "`[old_prefix]setprefix / setpre prefix=\"[new_prefix]\"`",
           "value": "```Changes the command prefix for the bot to new_prefix.\nPlease note that the new prefix should be enclosed in quotes; leave no space between the \" and the \"=\"```"
+      },
+      {
+          "name": "[prefix]play [yt_url]",
+          "value": "```Plays the audio located at [yt_url]```"
       },
       {
           "name": "`[prefix]resetpre / resetprefix / reset_prefix`",
