@@ -1,6 +1,8 @@
 import discord, requests, json, asyncio
 from discord.ext import commands
 from cmds import help, invite, get_cat, get_dog, get_kawaii, set_pre, welcome
+from cmds.voice import join_vc
+
 
 class BotCommands(commands.Cog):
     def __init__(self, bot):

@@ -1,6 +1,6 @@
 import discord, os, sys, pathlib, base64, json, asyncio
 from discord.ext import commands
-from cogs import eventCog, commandCog
+from cogs import eventCog, commandCog, voiceCog
 
 class Bot(object):
 
@@ -13,13 +13,13 @@ class Bot(object):
         intents.messages = True
         intents.dm_messages = True
 
-
         self.botObj = commands.Bot(command_prefix=command_prefix, help_command=None, intents=intents)
 
 
     def setup(self):
         self.botObj.add_cog(eventCog.Events(self.botObj))
         self.botObj.add_cog(commandCog.BotCommands(self.botObj))
+        self.botObj.add_cog(voiceCog.Voices(self.botObj))
 
     def run(self):
         self.botObj.run(self.token)
