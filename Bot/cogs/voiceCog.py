@@ -1,4 +1,4 @@
-from cmds.voice import join_vc, play_aud
+from cmds.voice import join_vc, play_aud, add_url
 import discord, requests, json, asyncio
 from discord.ext import commands
 from discord.utils import get
@@ -18,16 +18,46 @@ class Voices(commands.Cog):
     async def leave_voice(self, ctx):
         channel = ctx.message.author.voice.channel
         voice = get(self.bot.voice_clients, guild=ctx.guild)
+        if voice.is_playing():
+            await self.stop(ctx)
 
         if voice and voice.is_connected():
             await voice.disconnect()
 
     @commands.command(pass_context=True)
-    async def play(self, ctx, url: str):
+    async def play_url(self, ctx, url: str):
         try:
             url = ctx.message.content.split()[1]
             await play_aud.play(ctx, self.bot, url)
-            
+
         except Exception as e:
             print(e)
             await ctx.send("`Error`")
+
+    @commands.command()
+    async def stop(self, ctx):
+        voice_client: discord.VoiceClient = discord.utils.get(self.bot.voice_clients, guild=ctx.guild)
+        if voice_client.is_playing:
+            voice_client.stop()
+        else:
+            await ctx.send("The bot is not playing anything right now.")
+
+    @commands.command()
+    async def pause(self, ctx):
+        voice_client: discord.VoiceClient = discord.utils.get(self.bot.voice_clients, guild=ctx.guild)
+        if voice_client.is_playing:
+            voice_client.pause()
+        else:
+            await ctx.send("The bot is not playing anything right now.")
+
+    @commands.command()
+    async def resume(self, ctx):
+        voice_client: discord.VoiceClient = discord.utils.get(self.bot.voice_clients, guild=ctx.guild)
+        if voice_client.is_playing:
+            voice_client.resume()
+        else:
+            await ctx.send("The bot is already playing right now.")
+
+    @commands.command(aliases=["add_url"], pass_context=True)
+    async def add(self, ctx, url: str):
+        await add_url.add(url)

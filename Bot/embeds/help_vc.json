@@ -1,0 +1,41 @@
+{
+  "embed": {
+    "color": 15027967,
+    "footer": {
+      "text": "by UnderBot"
+    },
+    "thumbnail": {
+      "url": "https://media.giphy.com/media/fT3PPZwB2lZMk/giphy.gif"
+    },
+    "author": {
+      "name": "UnderBot",
+      "icon_url": "https://raw.githubusercontent.com/NovusEdge/UnderBot/master/logo/logo(pexels-sebastiaan-stam-1097456).ico"
+    },
+    "fields": [
+      {
+        "name": "Join current voice-channel",
+        "value": "`ub.join_voice / vc / join / join_vc`"
+      },
+      {
+        "name": "Leave the current voice-channel",
+        "value": "`ub.leave_voice / leave / leave_vc`"
+      },
+      {
+        "name": "Plays the audio located at [yt_url]",
+        "value": "`ub.play [yt_url]`"
+      },
+      {
+        "name": "Stops the audio playback.",
+        "value": "`ub.stop`"
+      },
+      {
+        "name": "Pause the audio currently playing",
+        "value": "`ub.pause`"
+      },
+      {
+        "name": "Resume the audio paused",
+        "value": "`ub.resume`"
+      }
+    ]
+  }
+}
