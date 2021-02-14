@@ -1,4 +1,4 @@
-from cmds.voice import join_vc, play_aud, add_url
+from cmds.voice import join_vc, play_aud, add_url, playlist_play
 import discord, requests, json, asyncio
 from discord.ext import commands
 from discord.utils import get
@@ -61,3 +61,7 @@ class Voices(commands.Cog):
     @commands.command(aliases=["add_url"], pass_context=True)
     async def add(self, ctx, url: str):
         await add_url.add(url)
+
+    @commands.command(aliases=["pplay", "playplst"])
+    async def play_playlist(self, ctx):
+        await playlist_play.play(ctx, self.bot)
