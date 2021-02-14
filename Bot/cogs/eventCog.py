@@ -16,8 +16,7 @@ class Events(commands.Cog):
     @commands.Cog.listener()
     async def on_member_join(self, member):
         await welcome.welcome(member, self.bot)
-        if self.welcome_channel is not None:
-            await welcome.welcome_command(self.welcome_channel, member)
+        await welcome.welcome_command(member, self.bot)
 
     @commands.Cog.listener()
     async def on_member_leave(self, member):
@@ -27,4 +26,4 @@ class Events(commands.Cog):
     @commands.command(aliases=["setwlcm", "wlcm_chan"])
     async def set_welcome_channel(self, ctx):
         self.welcome_channel = ctx
-        await set_wlcm.set_welcome_channel(ctx, self.bot, self.welcome_channel)
+        await set_wlcm.set_welcome_channel(ctx, self.bot, self.welcome_channel, inst=self)
