@@ -1,0 +1,21 @@
+{
+  "embed": {
+    "color": 15027967,
+    "footer": {
+      "text": "by UnderBot"
+    },
+    "thumbnail": {
+      "url": "https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif"
+    },
+    "author": {
+      "name": "UnderBot",
+      "icon_url": "https://raw.githubusercontent.com/NovusEdge/UnderBot/master/logo/logo(pexels-sebastiaan-stam-1097456).ico"
+    },
+    "fields": [
+      {
+          "name": "Generate a link to invite the bot to servers:",
+          "value": "`ub.invite / INVITE / Invite`"
+      }
+    ]
+  }
+}

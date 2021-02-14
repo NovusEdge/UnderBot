@@ -32,9 +32,9 @@ class BotCommands(commands.Cog):
     async def welcome_command(self, ctx):
         await welcome.welcome_command(ctx)
 
-    @commands.command(aliases=["setpre", "set_prefix"])
-    async def setprefix(self, ctx):
-        await set_pre.setprefix(ctx, self.bot)
+    @commands.command(aliases=["setpre", "set_prefix"], pass_context=True)
+    async def setprefix(self, ctx, prefix: str):
+        await set_pre.setprefix(ctx, self.bot, prefix)
 
     @commands.command(aliases=["resetpre", "reset_prefix"])
     async def resetprefix(self, ctx):

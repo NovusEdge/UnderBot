@@ -1,0 +1,29 @@
+{
+  "embed": {
+    "color": 15027967,
+    "footer": {
+      "text": "by UnderBot"
+    },
+    "thumbnail": {
+      "url": "https://media.giphy.com/media/l4FGBcRIupVwrsAbS/giphy.gif"
+    },
+    "author": {
+      "name": "UnderBot",
+      "icon_url": "https://raw.githubusercontent.com/NovusEdge/UnderBot/master/logo/logo(pexels-sebastiaan-stam-1097456).ico"
+    },
+    "fields": [
+      {
+          "name": "Set/change the prefix for bot commands",
+          "value": "`ub.setpre / set_prefix / setprefix [new_prefix]`"
+      },
+      {
+          "name": "Reset the prefix of the bot back to the default: ub.",
+          "value": "`ub.resetpre / reset_prefix / leaveprefix`"
+      },
+      {
+          "name": "Set/Change the welcome channel for the bot to the channel this command is passed in:",
+          "value": "`ub.set`"
+      }
+    ]
+  }
+}
