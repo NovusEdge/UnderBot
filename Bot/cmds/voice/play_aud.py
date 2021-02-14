@@ -1,6 +1,5 @@
 import discord, json, os, requests, pathlib
 from discord.utils import get
-import youtube_dl
 from pytube import YouTube
 
 async def play(ctx, botObj, url):
