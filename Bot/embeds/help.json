@@ -23,28 +23,12 @@
           "value": "```txt\nDisplays an invite link for the bot\n```"
       },
       {
-          "name": "`[prefix]cats / CATS / cat / CAT`",
-          "value": "```Displays a cute picture/gif of a cat.```"
-      },
-      {
-          "name": "`[prefix]dogs / DOGS / dog / DOG`",
-          "value": "```Displays a cute pic of a dog.```"
-      },
-      {
-          "name": "`[prefix]join_voice / vc / join / join_vc`",
-          "value": "```Bot Joins the voice chat the user is currently in.```"
-      },
-      {
-          "name": "`[prefix]leave_voice / leave / leave_vc`",
-          "value": "```Bot leaves the vc it is currently in.```"
-      },
-      {
           "name": "`[old_prefix]setprefix / setpre prefix=\"[new_prefix]\"`",
           "value": "```Changes the command prefix for the bot to new_prefix.\nPlease note that the new prefix should be enclosed in quotes; leave no space between the \" and the \"=\"```"
       },
       {
-          "name": "[prefix]play [yt_url]",
-          "value": "```Plays the audio located at [yt_url]```"
+          "name": "[prefix]setwlcm / wlcm_chan / set_welcome_channel",
+          "value": "```Sets the current channel as the welcome channel\nThe bot will send an embed/message to the welcome channel when a member joins.```"
       },
       {
           "name": "`[prefix]resetpre / resetprefix / reset_prefix`",

@@ -1,0 +1,43 @@
+{
+  "embed": {
+    "title": "Please pass one of the given commands for specific help menus.",
+    "color": 62621,
+    "footer": {
+      "text": "by UnderBot"
+    },
+    "thumbnail": {
+      "url": "https://media.giphy.com/media/fT3PPZwB2lZMk/giphy.gif"
+    },
+    "author": {
+      "name": "UnderBot",
+      "icon_url": "https://raw.githubusercontent.com/NovusEdge/UnderBot/master/logo/logo(pexels-sebastiaan-stam-1097456).ico"
+    },
+    "fields": [
+        {
+          "name": "To Display this menu -_-",
+          "value": "`ub.help`",
+          "inline": true
+        },
+        {
+            "name": "Kawaii Zone",
+            "value": "`ub.help kawaii`",
+            "inline": true
+        },
+        {
+            "name": "Bot Config.",
+            "value": "`ub.help config`",
+            "inline": true
+        },
+        {
+            "name": "Voice",
+            "value": "`ub.help voice`",
+            "inline": true
+        },
+        {
+            "name": "Misc.",
+            "value": "`ub.help misc`",
+            "inline": true
+        }
+    ]
+  }
+}

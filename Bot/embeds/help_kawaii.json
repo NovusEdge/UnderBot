@@ -1,0 +1,30 @@
+{
+  "embed": {
+    "color": 15027967,
+    "footer": {
+      "text": "by UnderBot"
+    },
+    "thumbnail": {
+      "url": "https://media.giphy.com/media/fT3PPZwB2lZMk/giphy.gif"
+    },
+    "author": {
+      "name": "UnderBot",
+      "icon_url": "https://raw.githubusercontent.com/NovusEdge/UnderBot/master/logo/logo(pexels-sebastiaan-stam-1097456).ico"
+    },
+    "fields": [
+      {
+        "name": "Display cute cats",
+        "value": "`ub.CATS / cats/ CAT / cat`"
+
+      },
+      {
+        "name": "Display Cute Dogs",
+        "value": "`ub.dogs / DOGS / DOG / dog`"
+      },
+      {
+        "name": "Display anythin cute (may be a wtf gif too :P)",
+        "value": "`ub.cute / KAWAII / kawaii / Kawaii`"
+      }
+    ]
+  }
+}
