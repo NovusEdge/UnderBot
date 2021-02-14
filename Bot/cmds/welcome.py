@@ -1,5 +1,9 @@
 import discord, json, time
 
+async def get_roles(member):
+    roles = member.guild.roles
+    pass
+
 async def welcome(member, botObj):
 
     with open("embeds/welcome.json", "r") as invite_file:
@@ -19,26 +23,27 @@ def get_chan(ctx):
                 return guild
 
 
-async def welcome_command(ctx, member):
-    chan = get_chan(ctx)["welcome_channel"]
+async def welcome_command(member, botObj):
+    chan = get_chan(member)["welcome_channel"]
 
-    embedObj = discord.Embed.from_dict({
-        "embed": {
-            "title": f"Hello There @{member.display_name}, Welcome to {member.guild.name}",
-            "color": 9118641,
-            "footer": {
-                "text": "by UnderBot"
-            },
-            "thumbnail": {
-                "url": "https://media.giphy.com/media/LtRidSX6NNG5HD0dnB/giphy.gif"
-            },
-            "author": {
-                "name": "UnderBot",
-                "icon_url": "https://raw.githubusercontent.com/NovusEdge/UnderBot/master/logo/logo.ico"
-            },
-            "fields": [ ]
-        }
-    }["embed"])
+    # embedObj = discord.Embed.from_dict({
+    #     "embed": {
+    #         "title": f"Hello There {member.display_name}, Welcome to {member.guild.name}",
+    #         "color": 9118641,
+    #         "footer": {
+    #             "text": "by UnderBot"
+    #         },
+    #         "thumbnail": {
+    #             "url": "https://media.giphy.com/media/LtRidSX6NNG5HD0dnB/giphy.gif"
+    #         },
+    #         "author": {
+    #             "name": "UnderBot",
+    #             "icon_url": "https://raw.githubusercontent.com/NovusEdge/UnderBot/master/logo/logo.ico"
+    #         },
+    #         "fields": [ ]
+    #     }
+    # }["embed"])
 
+    # await botObj.get_channel(chan).send(f"Hello There {member.mention}, Welcome to {member.guild.name}", embed=embedObj)
 
-    await bot.get_channel(chan).send(embed=embedObj)
+    await botObj.get_channel(chan).send(f"Hello There {member.mention}, Welcome to {member.guild.name}")
