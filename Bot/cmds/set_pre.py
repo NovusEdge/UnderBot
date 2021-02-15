@@ -1,15 +1,10 @@
 import discord, json, re
 
-async def setprefix(ctx, botObj):
+async def setprefix(ctx, botObj, prefix):
     try:
-        pre = get_prefix(ctx)
-        print(pre)
-        botObj.command_prefix = pre
+        botObj.command_prefix = prefix
+        await ctx.send(f"`Command Prefix` changed to `{prefix}`")
 
-        await ctx.send(f"`Command Prefix` changed to `{pre}`")
-    except:
+    except Exception as e:
+        print(e)
         await ctx.send(r"`Error in changing Command Prefix :(`")
-
-def get_prefix(ctx):
-    msg = ctx.message.content
-    return msg.partition("prefix=")[2][1:-1]
