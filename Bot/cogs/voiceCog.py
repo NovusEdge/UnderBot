@@ -1,4 +1,4 @@
-from cmds.voice import join_vc, play_aud, add_url, playlist_play
+from cmds.voice import join_vc, play_aud
 import discord, requests, json, asyncio
 from discord.ext import commands
 from discord.utils import get
@@ -25,9 +25,8 @@ class Voices(commands.Cog):
             await voice.disconnect()
 
     @commands.command(pass_context=True)
-    async def play_url(self, ctx, url: str):
+    async def play(self, ctx, url: str):
         try:
-            url = ctx.message.content.split()[1]
             await play_aud.play(ctx, self.bot, url)
 
         except Exception as e:
@@ -58,10 +57,10 @@ class Voices(commands.Cog):
         else:
             await ctx.send("The bot is already playing right now.")
 
-    @commands.command(aliases=["add_url"], pass_context=True)
-    async def add(self, ctx, url: str):
-        await add_url.add(url)
+    # @commands.command(aliases=["add_url"], pass_context=True)
+    # async def add(self, ctx, url: str):
+    #     await add_url.add(url)
 
-    @commands.command(aliases=["pplay", "playplst"])
-    async def play_playlist(self, ctx):
-        await playlist_play.play(ctx, self.bot)
+    # @commands.command(aliases=["pplay", "playplst"])
+    # async def play_playlist(self, ctx):
+    #     await playlist_play.play(ctx, self.bot)
